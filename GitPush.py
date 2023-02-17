@@ -12,9 +12,9 @@ repo_url = 'https://github.com/CertusPassu/Unity_VR_Room_2023.git'
 # Define function to create a new file with content
 def create_file():
     now = datetime.datetime.now()
-    filename = f'file_{now.strftime("%Y%m%d%H%M%S")}.txt'
+    filename = f'Asset{now.strftime("%M%S")}.txt'
     with open(filename, 'w') as f:
-        f.write('This is a commit file created on ' + now.strftime("%Y-%m-%d %H:%M:%S"))
+        f.write('When to look is sometime more imortant then where ' + now.strftime("%Y-%m-%d %H:%M:%S"))
 
     return filename
 
@@ -24,7 +24,7 @@ os.system(f'git add {filename}')
 os.system(f'git commit -m "Add {filename}"')
 os.system(f'git push {repo_url}')
 
-# Wait for 2 minutes
+# Time to wait
 time.sleep(15)
 
 # Delete the file and push that deletion to Github
