@@ -53,7 +53,7 @@ sysinfo.txt
 
 # Builds
 *.apk
-GitPush.py
+push.py
 *.unitypackage
 
 # Crashlytics generated file
